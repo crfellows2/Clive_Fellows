@@ -1,0 +1,176 @@
+:root {
+    /* --text: #fafafa;
+    --background: #091111;
+    --primary: #318f8f;
+    --secondary: #1a1a1a;
+    --accent: #7d75b6;
+
+    --text: #fcf6f2;
+    --background: #000000;
+    --primary: #22729b;
+    --secondary: #160a2e;
+    --accent: #329dd2;
+
+    --text: #fcf6f2;
+    --background: #000000;
+    --primary: #22729b;
+    --secondary: #160a2e;
+    --accent: #329dd2; */
+
+    /* --colslct: hsl(200, 84%, 0%);
+    --colslct: hsl(182, 53%, 0%);
+    --colslct: hsl(231, 11%, 13%);
+    --colslct: hsl(220, 28%, 1%);
+    --colslct: hsl(212, 46%, 7%);
+    --colslct: hsl(209, 48%, 13%);
+	--colslct: hsl(225, 30%, 0%); 
+	--colslct: hsl(210, 20%, 16%); */
+    --primary-color-h: 210;
+    --primary-color-s: 40%;
+    --primary-color-l: 0%;
+
+    --primary-color: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));
+    --primary-color-10: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 5%));
+    --primary-color-20: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 10%));
+    --primary-color-30: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 15%));
+    --primary-color-40: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 20%));
+    --primary-color-50: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 25%));
+    --primary-color-60: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 30%));
+    --primary-color-70: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 35%));
+    --primary-color-80: hsl(var(--primary-color-h), var(--primary-color-s), calc(var(--primary-color-l) + 40%));
+
+    --text: white;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--primary-color-10);
+    /* background-color: hsl(200, 84%, 15%); */
+    /* accent-color: var(--accent); */
+	/* background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg"); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin: 2rem;
+}
+
+main {
+    margin-left: min(30%, 15rem);
+}
+
+.sidebar {
+    position: fixed;
+    width: min(30%, 15rem);
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: var(--primary-color-20);
+}
+
+.sidebar header {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: var(--primary-color-20);
+    user-select: none;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: inherit;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .3s;
+    text-decoration: inherit;
+}
+
+ul li:hover a {
+    padding-left: 60px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    padding-bottom: 5rem;
+}
+
+/* .section-header {
+    margin-top: 8rem;
+} */
+
+.product-grid {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(50%, 18rem), 1fr));
+    gap: 2rem;
+}
+
+.card {
+    /* aspect-ratio: 1 / 1.5; */
+    /* border: 3px solid hotpink; */
+    border-radius: .75rem;
+    text-decoration: inherit;
+    color: inherit;
+    overflow: hidden;
+    background-color: var(--primary-color-20);
+    box-shadow: 0 .25rem 1rem rgb(0, 0, 0, 1);
+    transition: transform 0.25s ease-in-out;
+}
+
+.card.clickable:hover {
+    transform: scale(1.05);
+}
+
+.card__content {
+    align-self: end;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.card__content h2 {
+    margin-block: 1rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.card__img {
+    width: 100%;
+    aspect-ratio: 1.6;
+    object-fit: cover;
+}
+
+.white-bg {
+    background-color: white;
+}

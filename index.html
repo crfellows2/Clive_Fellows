@@ -1,33 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="assets/css/styling.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="resume.html">Resume</a></li>
+    <main>
+        <div class="sidebar">
+            <!-- <header>Title</header> -->
+            <ul role="list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#experience-section">Experience</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-        </nav>
-        <hr>
-        <h1>Hi, I'm Clive.</h1>
-    </header>
-    <Section>
-        <p> I'm a second year mechanical engineering student at the University of Toronto. My passion for
-            engineering and design has led me to work on many self driven projetcs and develop skills in programming,
-            mechatronics, and CAD to compliment what I've learned at school. I'm on the brakes subsection of the
-            University of Toronto Formula SAE racing team, but I also like to help with any other subsections that need
-            it. I have leadership and management experience from six years in the Royal Canadian Air Cadets.
-            <br> I'm currently looking for a four month summer internship opportunity so check out my
-            <a href="resume.html">resume</a> and <a href="portfolio.html">portfolio!</a>
-        </p>
-        <div><img src="images/Clive Fellows.jpeg" alt="Picture of Clive" width="250px"></div>
-    </Section>
+        </div>
+        <div class="container">
+            <h1 id="experience-section" class="section-header">Experience</h1>
+            <div class="product-grid">
+                <a href="#" class="card">
+                    <img src="images/car.JPG" alt="" class="card__img">
+                    <div class="card__content">
+                        <h2 class="card__title">Formula SAE</h2>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="images/CN.png" alt="" class="card__img white-bg">
+                    <div class="card__content">
+                        <h2 class="card__title">CN Rail</h2>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                    </div>
+                </a>
+            </div>
+            <h1 id="projects-section" class="section-header">Projects</h1>
+            <div class="product-grid">
+                <a href="portfolio.html" class="card clickable">
+                    <img src="images/game.png" alt="" class="card__img">
+                    <div class="card__content">
+                        <h2 class="card__title">3D Video Game</h2>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                    </div>
+                </a>
+                <a href="portfolio.html" class="card clickable">
+                    <img src="images/satellite_Receiver.png" alt="" class="card__img">
+                    <div class="card__content">
+                        <h2 class="card__title">Satellite receiving station</h2>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                    </div>
+                </a>
+                <a href="portfolio.html" class="card clickable">
+                    <img src="images/EBS.jpg" alt="" class="card__img">
+                    <div class="card__content">
+                        <h2 class="card__title">Pneumatic Emergency Braking System</h2>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                    </div>
+                </a>
+                <a href="portfolio.html" class="card clickable">
+                    <img src="images/BookingBot.gif" alt="" class="card__img">
+                    <div class="card__content">
+                        <h2 class="card__title">Python Booking Bot</h2>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                    </div>
+                </a>
+                <a href="portfolio.html" class="card clickable">
+                    <img src="images/MouseCamera.jpg" alt="" class="card__img">
+                    <div class="card__content">
+                        <h2 class="card__title">Mouse Camera</h2>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                    </div>
+                </a>
+                <a href="portfolio.html" class="card clickable">
+                    <img src="images/pick_and_place_feeder.png" alt="" class="card__img">
+                    <div class="card__content">
+                        <h2 class="card__title">Pick and place feeder</h2>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                    </div>
+                </a>
+                <a href="portfolio.html" class="card clickable">
+                    <img src="images/TPL_Outdoor_Common_Area.png" alt="" class="card__img">
+                    <div class="card__content">
+                        <h2 class="card__title">TPL Common Area</h2>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                    </div>
+                </a>
+                <a href="portfolio.html" class="card clickable">
+                    <img src="images/gearbox16-9.png" alt="" class="card__img">
+                    <div class="card__content">
+                        <h2 class="card__title">90° 3:1 Gearbox</h2>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                    </div>
+                </a>
+                <a href="portfolio.html" class="card clickable">
+                    <img src="images/rover_wheel.png" alt="" class="card__img">
+                    <div class="card__content">
+                        <h2 class="card__title">Rover Wheel</h2>
+                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
