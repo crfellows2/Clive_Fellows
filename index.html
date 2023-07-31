@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clive Fellows</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,29 +16,46 @@
 </head>
 
 <body>
+    <nav class="sidebar">
+        <ul role="list">
+            <li><a href="#about">
+                    <p>About Me</p>
+                </a></li>
+            <li><a href="#experience">
+                    <p>Experience</p>
+                </a></li>
+            <li><a href="#skills">
+                    <p>Skills</p>
+                </a></li>
+            <li><a href="#projects">
+                    <p>Projects</p>
+                </a></li>
+            <li><a href="#contact">
+                    <p>Contact</p>
+                </a></li>
+        </ul>
+    </nav>
     <main>
-        <div class="sidebar">
-            <!-- <header>Title</header> -->
-            <ul role="list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#experience-section">Experience</a></li>
-                <li><a href="#projects-section">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div class="container">
-            <h1 id="experience-section" class="section-header">Experience</h1>
+        <section id="about">
+            <h1>About me</h1>
+            <div>
+                <img src="images/pfp.jpg" class="rounded" alt="">
+                <p> My name is Clive and I'm a third year mechanical engineering student at the University of Toronto. My passion for
+                    engineering and design has led me to work on many self driven <a href="#projects">projects</a> and
+                    develop <a href="#skills">skills</a> in programming, mechatronics, and CAD to compliment what I've
+                    learned at school.
+                    <br><br>
+                    I'm currently looking for a full time Co-op internship opportunity after my third year so check out
+                    my
+                    <a href="resume.html">resume</a> and some of my <a href="#projects">projects</a>!
+                </p>
+            </div>
+        </section>
+        <section id="experience">
+            <h1>Experience</h1>
+            <h3>make it like: https://webflow.com/made-in-webflow/website/small-dev</h3>
             <div class="product-grid">
-                <a href="#" class="card">
-                    <img src="images/car.JPG" alt="" class="card__img">
-                    <div class="card__content">
-                        <h2 class="card__title">Formula SAE</h2>
-                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
-                    </div>
-                </a>
-                <a href="#" class="card">
+                <a href="cn.html" class="card">
                     <img src="images/CN.png" alt="" class="card__img white-bg">
                     <div class="card__content">
                         <h2 class="card__title">CN Rail</h2>
@@ -46,83 +63,185 @@
                             vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
                     </div>
                 </a>
-            </div>
-            <h1 id="projects-section" class="section-header">Projects</h1>
-            <div class="product-grid">
-                <a href="portfolio.html" class="card clickable">
-                    <img src="images/game.png" alt="" class="card__img">
+                <a href="fsae.html" class="card">
+                    <img src="images/car.JPG" alt="" class="card__img">
                     <div class="card__content">
-                        <h2 class="card__title">3D Video Game</h2>
-                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <h2 class="card__title">Formula SAE</h2>
+                        <p class="card__description">Designer for the brakes subsection for the University of Toronto
+                            Formula racing team</p>
                     </div>
                 </a>
-                <a href="portfolio.html" class="card clickable">
+            </div>
+        </section>
+        <section id="skills">
+            <h1>skills</h1>
+            <div class="flex-grid">
+                <div>
+                    <h2>Software</h2>
+                    <hr>
+                    <ul role="list">
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>mechanical</h2>
+                    <hr>
+                    <ul role="list">
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>office</h2>
+                    <hr>
+                    <ul role="list">
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                        <li>skill</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="product-grid">
+                <a href="Projects/game/game.html" class="card">
+                    <img src="Projects/game/thumb.png" alt="" class="card__img">
+                    <div class="card__content">
+                        <h2 class="card__title">3D Video Game</h2>
+                        <p class="card__description">A 3D space exploration and colonization game</p>
+                        <ul class="card__tech" role="list">
+                            <li><img src="images/Unity-logo.png" alt="Unity"></li>
+                            <li><img src="images/Csharp_Logo.png" alt="C#"></li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="portfolio.html" class="card">
+                    <img src="images/EBS.jpg" alt="" class="card__img">
+                    <div class="card__content">
+                        <h2 class="card__title">Pneumatic Emergency Braking System</h2>
+                        <p class="card__description">Pneumatic over hydraulic booster cylinder for the emergency braking
+                            system on the formula SAE car</p>
+                        <ul class="card__tech" role="list">
+                            <li><img src="https://www.3ds.com/assets/3ds-navigation/Solidworks-logo_red.svg"
+                                    alt="Soliworks"></li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="portfolio.html" class="card">
                     <img src="images/satellite_Receiver.png" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">Satellite receiving station</h2>
                         <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                             vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <ul class="card__tech" role="list">
+                        </ul>
                     </div>
                 </a>
-                <a href="portfolio.html" class="card clickable">
-                    <img src="images/EBS.jpg" alt="" class="card__img">
+                <a href="Projects/heatmap/heatmap.html" class="card">
+                    <img src="Projects/heatmap/thumb.png" alt="" class="card__img">
                     <div class="card__content">
-                        <h2 class="card__title">Pneumatic Emergency Braking System</h2>
+                        <h2 class="card__title">Location Heatmap Generator</h2>
                         <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                             vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <ul class="card__tech" role="list">
+                            <li><img src="images/JavaScript-logo.png" alt="JavaScript"></li>
+                        </ul>
                     </div>
                 </a>
-                <a href="portfolio.html" class="card clickable">
+                <a href="portfolio.html" class="card">
                     <img src="images/BookingBot.gif" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">Python Booking Bot</h2>
                         <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                             vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <ul class="card__tech" role="list">
+                            <li><img src="https://www.python.org/static/img/python-logo.png" alt="Python"></li>
+                        </ul>
                     </div>
                 </a>
-                <a href="portfolio.html" class="card clickable">
+                <a href="portfolio.html" class="card">
                     <img src="images/MouseCamera.jpg" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">Mouse Camera</h2>
                         <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                             vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <ul class="card__tech" role="list">
+                            <li><img src="images/Csharp_Logo.png" alt="C#"></li>
+                            <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/720px-Arduino_Logo.svg.png?20200922062315"
+                                    alt="Arduino"></li>
+                            <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+                                    alt="C++"></li>
+                        </ul>
                     </div>
                 </a>
-                <a href="portfolio.html" class="card clickable">
+                <a href="portfolio.html" class="card">
                     <img src="images/pick_and_place_feeder.png" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">Pick and place feeder</h2>
                         <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                             vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <ul class="card__tech" role="list">
+                            <li><img src="https://www.3ds.com/assets/3ds-navigation/Solidworks-logo_red.svg"
+                                    alt="Soliworks"></li>
+                        </ul>
                     </div>
                 </a>
-                <a href="portfolio.html" class="card clickable">
+                <a href="portfolio.html" class="card">
                     <img src="images/TPL_Outdoor_Common_Area.png" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">TPL Common Area</h2>
                         <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                             vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <ul class="card__tech" role="list">
+                            <li><img src="images/blender_logo.png" alt="Blender"></li>
+                        </ul>
                     </div>
                 </a>
-                <a href="portfolio.html" class="card clickable">
+                <a href="portfolio.html" class="card">
                     <img src="images/gearbox16-9.png" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">90° 3:1 Gearbox</h2>
                         <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                             vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <ul class="card__tech" role="list">
+                            <li><img src="https://www.3ds.com/assets/3ds-navigation/Solidworks-logo_red.svg"
+                                    alt="Soliworks"></li>
+                        </ul>
                     </div>
                 </a>
-                <a href="portfolio.html" class="card clickable">
+                <a href="portfolio.html" class="card">
                     <img src="images/rover_wheel.png" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">Rover Wheel</h2>
                         <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                             vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <ul class="card__tech" role="list">
+                            <li><img src="https://www.3ds.com/assets/3ds-navigation/Solidworks-logo_red.svg"
+                                    alt="Soliworks"></li>
+                        </ul>
                     </div>
                 </a>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Heat Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <div id="sideMenu">
+        <div id="topButtons">
+            <button id="mapViewButton" class="toggleButton">Map</button>
+            <button id="satelliteViewButton" class="toggleButton active">Satellite</button>
+        </div>
+
+        <div class="menuItem">
+            <div>
+                <label for="showLabelsCheckbox">Show Labels:</label>
+            </div>
+            <div>
+                <input type="checkbox" id="showLabelsCheckbox">
+            </div>
+        </div>
+
+        <div class="menuItem">
+            <div>
+                <label for="showRoadsCheckbox">Show Roads:</label>
+            </div>
+            <div>
+                <input type="checkbox" id="showRoadsCheckbox">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="menuItem">
+            <div>
+                <label for="intensitySlider">Max Intensity:</label>
+            </div>
+            <div>
+                <span id="intensityLabel">10</span>
+                <input type="range" id="intensitySlider" min="0" max="99" value="10">
+            </div>
+        </div>
+
+        <div class="menuItem">
+            <div>
+                <label for="radiusSlider">Point Radius:</label>
+            </div>
+            <div>
+                <span id="radiusLabel">10</span>
+                <input type="range" id="radiusSlider" min="1" max="99" value="10">
+            </div>
+        </div>
+
+        <button id="resetButton">Reset Sliders</button>
+
+        <hr>
+        <div class="menuItem">
+            <div>
+                <span>Locations:</span>
+            </div>
+            <div>
+                <span id="locationsCount">0</span>
+            </div>
+        </div>
+        <hr>
+
+        <input type="file" id="fileInput" multiple>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAsbEqFnD_el7hdZRu2GM-HY2buVFPOrw&libraries=visualization&callback=initMap"></script>
+</body>
+
+</html>
