@@ -11,69 +11,121 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- ICONS -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
 </head>
 
 <body>
-    <nav class="sidebar">
+    <nav class="main-nav" aria-label="primary menu">
         <ul role="list">
-            <li><a href="#about">
-                    <p>About Me</p>
-                </a></li>
-            <li><a href="#experience">
-                    <p>Experience</p>
-                </a></li>
-            <li><a href="#skills">
-                    <p>Skills</p>
-                </a></li>
-            <li><a href="#projects">
-                    <p>Projects</p>
-                </a></li>
-            <li><a href="#contact">
-                    <p>Contact</p>
-                </a></li>
+            <li>
+                <a href="#about" class="flex-column">
+                    <i class="fi fi-rs-user"></i>
+                    About Me
+                </a>
+            </li>
+            <li>
+                <a href="#experience" class="flex-column">
+                    <i class="fi fi-rr-briefcase"></i>
+                    Experience
+                </a>
+            </li>
+            <!-- <li
+                ><a href="#skills" class="flex-column">
+                <i class="fi fi-rs-user"></i>
+                Skills
+                </a></li
+                > -->
+            <li>
+                <a href="#projects" class="flex-column">
+                    <i class="fi fi-rr-edit"></i>
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a href="#resume" class="flex-column">
+                    <i class="fi fi-rr-file-user"></i>
+                    Resume
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/clive-fellows-509340253" target="_blank" class="flex-column">
+                    <i class="fi fi-brands-linkedin"></i>
+                    Linkedin
+                </a>
+            </li>
+            <li>
+                <a href="mailto:crfellows2@gmail.com" class="flex-column">
+                    <i class="fi fi-rr-envelope"></i>
+                    Email
+                </a>
+            </li>
         </ul>
     </nav>
     <main>
         <section id="about">
             <h1>About me</h1>
             <div>
-                <img src="images/pfp.jpg" class="rounded" alt="">
-                <p> My name is Clive and I'm a third year mechanical engineering student at the University of Toronto. My passion for
-                    engineering and design has led me to work on many self driven <a href="#projects">projects</a> and
-                    develop <a href="#skills">skills</a> in programming, mechatronics, and CAD to compliment what I've
-                    learned at school.
+                <figure>
+                    <img src="images/pfp.jpg" class="rounded" alt="">
+                    <figcaption>After <a
+                            href="https://www.formula-hybrid.org/news/its-a-team-effort-electric-car-sparks-international-success-for-univ-of-toronto-students"
+                            target="_blank">placing
+                            first overall</a> at Formula Hybrid Electric New Hampshire</figcaption>
+                </figure>
+                <p> My name is Clive and I'm a third year mechanical engineering student at the University of Toronto. I
+                    have experience in both mechanical and software engineering <a href="#projects">projects</a> at
+                    home,
+                    work, and school, and am currently looking for a co-op internship opportunity starting summer 2024.
                     <br><br>
-                    I'm currently looking for a full time Co-op internship opportunity after my third year so check out
-                    my
-                    <a href="resume.html">resume</a> and some of my <a href="#projects">projects</a>!
+                    Please check out my
+                    <a href="resume.html">resume</a> and <a href="mailto:crfellows2@gmail.com">contact me</a> if you
+                    think I might be a good fit
+                    for your team.
                 </p>
             </div>
         </section>
         <section id="experience">
             <h1>Experience</h1>
-            <h3>make it like: https://webflow.com/made-in-webflow/website/small-dev</h3>
-            <div class="product-grid">
-                <a href="cn.html" class="card">
-                    <img src="images/CN.png" alt="" class="card__img white-bg">
+            <div>
+                <span href="cn.html" class="card-horizontal">
+                    <img src="images/CN.png" alt="" class="white-bg" style="object-fit: scale-down;">
                     <div class="card__content">
-                        <h2 class="card__title">CN Rail</h2>
-                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <h2 class="card__title">CN Rail Co-op</h2>
+                        <h3>05/2023 - 08/2023, Toronto, ON</h3>
+                        <p class="card__description">Full time co-op intern on the innovation management team. I
+                            worked both independently and with other team members to research, develop, and implement
+                            new technologies to CNʼs benefit. Developed and followed hardware and soware prototype
+                            testing plans</p>
+                        <blockquote>" Clive was instrumental to our Blindspot Protector initiative; a
+                            wearable safety system. He provided technical support, unpacking the code and suggesting and
+                            developing improvements, while also staging devices and meeting with test participants in
+                            the field. Additionally he performed and presented research on the potential applications of
+                            applying virtual reality training at the railroad and compiled innovation signals for the
+                            team. ... His design of a threat matrix for our blindspot protector invention
+                            was outstanding and greatly improved the user experience of the technology. "
+                            <cite>- Helen Glover (Manager)</cite>
+                        </blockquote>
                     </div>
-                </a>
-                <a href="fsae.html" class="card">
-                    <img src="images/car.JPG" alt="" class="card__img">
+                </span>
+                <span href="fsae.html" class="card-horizontal">
+                    <img src="images/car.JPG" alt="">
                     <div class="card__content">
                         <h2 class="card__title">Formula SAE</h2>
-                        <p class="card__description">Designer for the brakes subsection for the University of Toronto
-                            Formula racing team</p>
+                        <h3>09/2022 - Present, Toronto, ON</h3>
+                        <p class="card__description">Designer for the brakes subsection for the <a
+                                href="https://fsaeutoronto.ca/" target="_blank">University of Toronto
+                                Formula racing team</a></p>
                     </div>
-                </a>
+                </span>
             </div>
         </section>
-        <section id="skills">
+        <!-- <section id="skills">
             <h1>skills</h1>
             <div class="flex-grid">
                 <div>
@@ -119,71 +171,87 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="projects">
             <h1>Projects</h1>
             <div class="product-grid">
-                <a href="Projects/game/game.html" class="card">
-                    <img src="Projects/game/thumb.png" alt="" class="card__img">
+                <span href="Projects/game/game.html" class="card">
+                    <img src="Projects/game/thumb2.png" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">3D Video Game</h2>
-                        <p class="card__description">A 3D space exploration and colonization game</p>
+                        <p class="card__description">A 3D space exploration and colonization game. I use sparse voxel
+                            octrees to allow me to render voxel planets made up of trillions of voxels generated
+                            procedurally by a compute shader. The surface is then extracted using
+                            the marching cubes algorithm, also in a compute shader.</p>
+                        <!-- <button>More Info</button> -->
                         <ul class="card__tech" role="list">
                             <li><img src="images/Unity-logo.png" alt="Unity"></li>
                             <li><img src="images/Csharp_Logo.png" alt="C#"></li>
                         </ul>
                     </div>
-                </a>
-                <a href="portfolio.html" class="card">
+                </span>
+                <span href="" class="card">
                     <img src="images/EBS.jpg" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">Pneumatic Emergency Braking System</h2>
                         <p class="card__description">Pneumatic over hydraulic booster cylinder for the emergency braking
-                            system on the formula SAE car</p>
+                            system on the formula SAE car. <br>Because the car needs two booster cylinders of varying
+                            dimensions, I developed this project as one file that is fully parameter driven so I can
+                            easily generate mutliple
+                            versions as needed</p>
                         <ul class="card__tech" role="list">
                             <li><img src="https://www.3ds.com/assets/3ds-navigation/Solidworks-logo_red.svg"
                                     alt="Soliworks"></li>
                         </ul>
                     </div>
-                </a>
-                <a href="portfolio.html" class="card">
+                </span>
+                <span href="" class="card">
                     <img src="images/satellite_Receiver.png" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">Satellite receiving station</h2>
-                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <p class="card__description">Used a software defined radio with a custom antenna and SDR#
+                            software to record analog image signals from NOAA weather sattelites. The recorded audio
+                            could then be decoded into images like the one above.</p>
                         <ul class="card__tech" role="list">
                         </ul>
                     </div>
-                </a>
-                <a href="Projects/heatmap/heatmap.html" class="card">
+                </span>
+                <span href="Projects/heatmap/heatmap.html" class="card">
                     <img src="Projects/heatmap/thumb.png" alt="" class="card__img">
                     <div class="card__content">
-                        <h2 class="card__title">Location Heatmap Generator</h2>
-                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <h2 class="card__title">Incident type and location analysis tool</h2>
+                        <p class="card__description">A web app I made to analize the data from csv files produced by our
+                            wearable safety program at CN. One of the tools is a heat map showing where user-specified
+                            incidents
+                            occured, but the app also produces graphs to analize the different types of incidents</p>
+                        <!-- <button>More Info</button> -->
                         <ul class="card__tech" role="list">
                             <li><img src="images/JavaScript-logo.png" alt="JavaScript"></li>
                         </ul>
                     </div>
-                </a>
-                <a href="portfolio.html" class="card">
+                </span>
+                <span href="" class="card">
                     <img src="images/BookingBot.gif" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">Python Booking Bot</h2>
-                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <p class="card__description">I was having a hard time booking my drivers license road test so I
+                            made a bot that uses selenium to monitor the ICBC website and check for cancelled tests that
+                            I
+                            could slip into</p>
                         <ul class="card__tech" role="list">
                             <li><img src="https://www.python.org/static/img/python-logo.png" alt="Python"></li>
                         </ul>
                     </div>
-                </a>
-                <a href="portfolio.html" class="card">
-                    <img src="images/MouseCamera.jpg" alt="" class="card__img">
+                </span>
+                <span href="" class="card">
+                    <img src="Projects/Mouse Camera/20220812_192527.gif" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">Mouse Camera</h2>
-                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <p class="card__description">Some mice have serial debug ports left active from the
+                            factory. I programed an arduino to use the port on my old mouse to read and write to
+                            arbitrary memory buffers, specifically those that held the image data from the mouse sensor.
+                            I then wrote a C# windows forms application to connect to the arduino over USB and display
+                            the image data as a live stream</p>
                         <ul class="card__tech" role="list">
                             <li><img src="images/Csharp_Logo.png" alt="C#"></li>
                             <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/720px-Arduino_Logo.svg.png?20200922062315"
@@ -192,55 +260,67 @@
                                     alt="C++"></li>
                         </ul>
                     </div>
-                </a>
-                <a href="portfolio.html" class="card">
+                </span>
+                <span href="" class="card">
                     <img src="images/pick_and_place_feeder.png" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">Pick and place feeder</h2>
-                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <p class="card__description">As a final project for a design course, my team had to design a
+                            pick and place machine. With some inspiration from various designs on the internet,
+                            I designed a modular component feeding system that uses tape feeders as shown above to strip
+                            the tape and feed components to the head of the machine</p>
                         <ul class="card__tech" role="list">
                             <li><img src="https://www.3ds.com/assets/3ds-navigation/Solidworks-logo_red.svg"
                                     alt="Soliworks"></li>
                         </ul>
                     </div>
-                </a>
-                <a href="portfolio.html" class="card">
+                </span>
+                <span href="Projects/TPL Common Area/Team 132 Final Presentation.pdf" class="card">
                     <img src="images/TPL_Outdoor_Common_Area.png" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">TPL Common Area</h2>
-                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <p class="card__description">Me and my design course team worked with a representative of the
+                            Toronto Public Library to design a new outdoor common area for one of their branches. We
+                            came up with 3 designs, one of which is shown above. I modeled and rendered multiple views
+                            of all our designs in blender to present to the client.</p>
+                        <!-- <button>More Info</button> -->
                         <ul class="card__tech" role="list">
                             <li><img src="images/blender_logo.png" alt="Blender"></li>
                         </ul>
                     </div>
-                </a>
-                <a href="portfolio.html" class="card">
+                </span>
+                <span href="Projects/gearbox/Gear Box Assembly.pdf" class="card">
                     <img src="images/gearbox16-9.png" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">90° 3:1 Gearbox</h2>
-                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <p class="card__description">I designed and printed this gearbox as a project for a design
+                            course. The design met all the functional requirements while being easy to print and
+                            assemble. Having never seen it before, the TA was able to assemble the gearbox in under 30
+                            seconds by following my printed instruction sheet; the fastest assembly in the lab</p>
+                        <!-- <button>More Info</button> -->
                         <ul class="card__tech" role="list">
                             <li><img src="https://www.3ds.com/assets/3ds-navigation/Solidworks-logo_red.svg"
                                     alt="Soliworks"></li>
                         </ul>
                     </div>
-                </a>
-                <a href="portfolio.html" class="card">
+                </span>
+                <span href="" class="card">
                     <img src="images/rover_wheel.png" alt="" class="card__img">
                     <div class="card__content">
                         <h2 class="card__title">Rover Wheel</h2>
-                        <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            vulputate orci eget felis iaculis, ut luctus ipsum porta.</p>
+                        <p class="card__description">An experiment with more complex 3D geometry in solidworks; The
+                            spokes curve in 3D with non-constant radii.</p>
                         <ul class="card__tech" role="list">
                             <li><img src="https://www.3ds.com/assets/3ds-navigation/Solidworks-logo_red.svg"
                                     alt="Soliworks"></li>
                         </ul>
                     </div>
-                </a>
+                    </a>
             </div>
+        </section>
+        <section id="resume">
+            <h1>Resume</h1>
+            <iframe src="resume.pdf"></iframe>
         </section>
     </main>
 </body>
