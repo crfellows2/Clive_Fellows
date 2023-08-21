@@ -66,7 +66,7 @@
     --border-radius: 0.5rem;
     --drop-shadow: 0 .25rem 1rem rgb(0, 0, 0, .25);
 
-    --sidebar-width: 7vw;
+    --sidebar-width: min(7.5vw, 6rem);
     --resume-width: 50vw;
 
     font-family: 'Roboto', sans-serif;
@@ -144,7 +144,8 @@ section> :first-child::after {
 }
 
 .main-nav i {
-    font-size: 6vh;
+    /* font-size: 6vh; */
+    font-size: min(400%, 6vh);
     line-height: 0rem;
     margin-bottom: 0.5rem;
 }
@@ -155,7 +156,8 @@ section> :first-child::after {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: min(1.2vw, 2.5vh);
+    /* font-size: min(1.2vw, 2.5vh); */
+    font-size: calc(var(--sidebar-width) / 6);
     /* font-size: 100%; */
     color: inherit;
     text-decoration: inherit;
@@ -373,7 +375,8 @@ iframe {
     border-radius: var(--border-radius);
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) { */
+    @media (orientation: portrait) and (max-aspect-ratio: 1/1) {
 
     :root {
         --sidebar-width: 0vw;
