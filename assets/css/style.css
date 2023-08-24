@@ -375,6 +375,11 @@ iframe {
     border-radius: var(--border-radius);
 }
 
+#skills li {
+    text-align: center;
+    line-height: 2.25rem;
+}
+
 /* @media (max-width: 900px) { */
     @media (orientation: portrait) and (max-aspect-ratio: 1/1) {
 
